@@ -9,7 +9,7 @@ type TaskType = {
 };
 
 const getTestApi = async () => {
-  const { data } = await client.get("users");
+  const { data } = await client.get("data.json");
   return data;
 };
 
