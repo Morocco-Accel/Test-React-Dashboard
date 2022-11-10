@@ -1,2 +1,2 @@
 export * from "./APIProvider";
-export * from "./Users";
+export * from "./UseEndPoint";

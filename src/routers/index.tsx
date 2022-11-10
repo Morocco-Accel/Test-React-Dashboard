@@ -2,7 +2,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { NotFound, Landing } from "pages";
 //
 
-export default function Screens() {
+export default function Routers() {
   return (
     <BrowserRouter>
       <Routes>
