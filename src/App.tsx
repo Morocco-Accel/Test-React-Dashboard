@@ -5,7 +5,7 @@ import { hydrateAuth } from "core";
 
 //@Style
 import "assets/scss/index.scss";
-import "antd/dist/antd.less";
+
 //
 hydrateAuth();
 
