@@ -1,1 +1,1 @@
-export * from "./UseGetUsers";
+export * from "./UseTestApi";

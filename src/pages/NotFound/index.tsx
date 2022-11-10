@@ -1,8 +1,6 @@
-import { useAuth } from "core";
 import React from "react";
 
 export function NotFound() {
-  const { signOut } = useAuth();
   return (
     <div
       style={{
@@ -13,7 +11,6 @@ export function NotFound() {
       }}
     >
       <h1>Not Found</h1>
-      <button onClick={signOut}>signout</button>
     </div>
   );
 }

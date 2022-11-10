@@ -8,11 +8,11 @@ type TaskType = {
   role: object;
 };
 
-const getUsers = async () => {
+const getTestApi = async () => {
   const { data } = await client.get("users");
   return data;
 };
 
 export function useUsers() {
-  return useQuery<TaskType[]>("users", getUsers);
+  return useQuery<TaskType[]>("users", getTestApi);
 }

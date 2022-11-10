@@ -1,14 +1,12 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-
+import { NotFound, Landing } from "pages";
 //
-import { Application } from "./Application";
-import { NotFound } from "pages";
 
 export default function Screens() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/*" element={<Application />} />
+        <Route index element={<Landing />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
