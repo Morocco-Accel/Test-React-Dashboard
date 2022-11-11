@@ -6,11 +6,25 @@ export function Sidenav() {
       <BlackSpot />
       <MenuLink
         TITLE="Profile"
-        CHILDREN={<LinkButton TITLE="Ryan Workman" LINK_TO="/" />}
+        CHILDREN={
+          <div>
+            <LinkButton TITLE="Ryan Workman" LINK_TO="/" />
+            <LinkButton TITLE="Déconnexion" LINK_TO="/" />
+          </div>
+        }
       />
       <MenuLink
         TITLE="Menu"
-        CHILDREN={<LinkButton TITLE="Tableau de bord" LINK_TO="/" />}
+        CHILDREN={
+          <div>
+            <LinkButton TITLE="Tableau de bord" LINK_TO="/" />
+            <LinkButton TITLE="Demandes de service" LINK_TO="/" />
+            <LinkButton TITLE="Clients" LINK_TO="/" />
+            <LinkButton TITLE="Lieux d'interventions" LINK_TO="/" />
+            <LinkButton TITLE="Partenaires" LINK_TO="/" />
+            <LinkButton TITLE="Bénéficaires" LINK_TO="/" />
+          </div>
+        }
       />
     </div>
   );

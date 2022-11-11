@@ -7,24 +7,34 @@
   width: 225px;
   background-color: #103c7e;
   .BLACK_SPOT {
+    margin-top: 20px;
     background: #000;
-    height: 60px;
-    width: 50%;
+    height: 100px;
+    width: 60%;
+    border-radius: 1.5rem;
   }
   .MENU_CONTAINER {
     display: flex;
     flex-direction: column;
     width: 90%;
-    align-items: center;
+    p {
+      color: #365fa1;
+    }
     .LINK_BUTTON {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 50px;
-      border: 1px solid #fff;
+      height: 45px;
+      border: 1px solid #305da1;
       color: #fff;
       text-decoration: none;
+      border-radius: 0.8rem;
+      margin-bottom: 10px;
+      background-color: transparent;
+      &:hover {
+        background-color: #4964a9;
+      }
     }
   }
 }

@@ -1,6 +1,15 @@
 .NAV_BAR {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100px;
   background-color: #d0eef6;
+  .N_CONTAINER {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
 }
