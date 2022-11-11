@@ -27,7 +27,7 @@ export function Sidenav() {
               RIGHT={<i className="fas fa-ellipsis-h"></i>}
             />
             <LinkButtonF
-              LEFT={<i className="fas fa-sign-out"></i>}
+              LEFT={<i className="fas fa-sign-in-alt"></i>}
               TITLE="Déconnexion"
               LINK_TO="/"
               RIGHT={<div />}
