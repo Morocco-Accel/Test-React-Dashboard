@@ -12,5 +12,38 @@
     justify-content: space-between;
     width: 90%;
     height: 70%;
+    .USER_INFO {
+      width: 80%;
+      h1 {
+        color: #173968;
+        margin: 0;
+      }
+      p {
+        color: gray;
+        margin: 0;
+      }
+    }
+    .AVA_NOT {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .NOTIFICATION {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: #5066a0;
+        color: #fff;
+        font-size: 24px;
+      }
+      .AVATAR {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+    }
   }
 }

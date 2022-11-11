@@ -5,9 +5,12 @@ export function Navbar() {
     <div className="NAV_BAR">
       <div className="N_CONTAINER">
         <UserInfo FIRST_NAME="Ryan" />
-        <div>
+        <div className="AVA_NOT">
           <Notification />
-          <Avatar ALT="..." IMAGE_LINK="..." />
+          <Avatar
+            ALT="..."
+            IMAGE_LINK="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1001.jpg"
+          />
         </div>
       </div>
     </div>
