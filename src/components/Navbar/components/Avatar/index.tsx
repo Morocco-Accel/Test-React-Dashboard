@@ -1,6 +1,3 @@
-import { url } from "inspector";
-import React, { FC } from "react";
-
 type avatarType = {
   ALT: string;
   IMAGE_LINK: string;
