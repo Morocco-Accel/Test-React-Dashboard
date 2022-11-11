@@ -12,7 +12,7 @@ export function DashboardRoute() {
         <Navbar />
         <div className="SCREENS">
           <Routes>
-            <Route path="DASHBOARD" element={<Landing />}></Route>
+            <Route index element={<Landing />}></Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
