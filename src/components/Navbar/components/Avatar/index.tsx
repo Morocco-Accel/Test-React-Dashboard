@@ -1,3 +1,4 @@
+import React from "react";
 type avatarType = {
   ALT: string;
   IMAGE_LINK: string;

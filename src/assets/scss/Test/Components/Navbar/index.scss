@@ -3,17 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 87%;
   height: 100px;
   background-color: #d0eef6;
   .N_CONTAINER {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
     height: 70%;
     .USER_INFO {
-      width: 80%;
       h1 {
         color: #173968;
         margin: 0;
@@ -26,8 +25,8 @@
     .AVA_NOT {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      width: 100%;
+
+      width: auto;
       .NOTIFICATION {
         display: flex;
         align-items: center;
@@ -38,11 +37,15 @@
         background: #5066a0;
         color: #fff;
         font-size: 24px;
+        cursor: pointer;
+        margin-right: 10px;
       }
       .AVATAR {
+        background-color: red;
         height: 50px;
         width: 50px;
         border-radius: 50%;
+        margin-left: 5px;
       }
     }
   }
