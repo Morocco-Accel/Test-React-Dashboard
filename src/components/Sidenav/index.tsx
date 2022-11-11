@@ -1,10 +1,17 @@
 import React from "react";
-import { LinkButton, MenuLink } from "./components";
+import { LinkButton, MenuLink, BlackSpot } from "./components";
 export function Sidenav() {
   return (
     <div className="SIDE_NAV">
-      <MenuLink TITLE="Profile" CHILDREN={<LinkButton TITLE="" LINK_TO="" />} />
-      <MenuLink TITLE="Menu" CHILDREN={<LinkButton TITLE="" LINK_TO="" />} />
+      <BlackSpot />
+      <MenuLink
+        TITLE="Profile"
+        CHILDREN={<LinkButton TITLE="Ryan Workman" LINK_TO="/" />}
+      />
+      <MenuLink
+        TITLE="Menu"
+        CHILDREN={<LinkButton TITLE="Tableau de bord" LINK_TO="/" />}
+      />
     </div>
   );
 }

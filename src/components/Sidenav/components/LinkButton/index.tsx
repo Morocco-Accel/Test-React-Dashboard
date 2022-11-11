@@ -6,5 +6,9 @@ type linkButtonType = {
   LINK_TO: string;
 };
 export function LinkButton({ LINK_TO, TITLE }: linkButtonType) {
-  return <Link to={LINK_TO}> {TITLE} </Link>;
+  return (
+    <Link className="LINK_BUTTON" to={LINK_TO}>
+      {TITLE}
+    </Link>
+  );
 }

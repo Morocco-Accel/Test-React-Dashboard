@@ -1,12 +1,30 @@
 .SIDE_NAV {
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
   height: 100%;
   width: 225px;
   background-color: #103c7e;
+  .BLACK_SPOT {
+    background: #000;
+    height: 60px;
+    width: 50%;
+  }
   .MENU_CONTAINER {
+    display: flex;
+    flex-direction: column;
     width: 90%;
+    align-items: center;
+    .LINK_BUTTON {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      border: 1px solid #fff;
+      color: #fff;
+      text-decoration: none;
+    }
   }
 }
