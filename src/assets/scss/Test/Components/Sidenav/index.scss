@@ -1,6 +1,12 @@
 .SIDE_NAV {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
   height: 100%;
   width: 225px;
   background-color: #103c7e;
+  .MENU_CONTAINER {
+    width: 90%;
+  }
 }
