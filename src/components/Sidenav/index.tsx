@@ -1,5 +1,11 @@
 import React from "react";
-import { LinkButton, MenuLink, BlackSpot } from "./components";
+import {
+  LinkButtonE,
+  LinkButtonF,
+  MenuLink,
+  BlackSpot,
+  ImgIcon,
+} from "./components";
 export function Sidenav() {
   return (
     <div className="SIDE_NAV">
@@ -8,8 +14,23 @@ export function Sidenav() {
         TITLE="Profile"
         CHILDREN={
           <div>
-            <LinkButton TITLE="Ryan Workman" LINK_TO="/" />
-            <LinkButton TITLE="Déconnexion" LINK_TO="/" />
+            <LinkButtonF
+              LEFT={
+                <ImgIcon
+                  URL="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1001.jpg"
+                  ALT="..."
+                />
+              }
+              TITLE="Ryan Workman"
+              LINK_TO="/"
+              RIGHT={null}
+            />
+            <LinkButtonF
+              LEFT={null}
+              TITLE="Déconnexion"
+              LINK_TO="/"
+              RIGHT={null}
+            />
           </div>
         }
       />
@@ -17,12 +38,12 @@ export function Sidenav() {
         TITLE="Menu"
         CHILDREN={
           <div>
-            <LinkButton TITLE="Tableau de bord" LINK_TO="/" />
-            <LinkButton TITLE="Demandes de service" LINK_TO="/" />
-            <LinkButton TITLE="Clients" LINK_TO="/" />
-            <LinkButton TITLE="Lieux d'interventions" LINK_TO="/" />
-            <LinkButton TITLE="Partenaires" LINK_TO="PARTENAIRES" />
-            <LinkButton TITLE="Bénéficaires" LINK_TO="/" />
+            <LinkButtonE TITLE="Tableau de bord" LINK_TO="/" />
+            <LinkButtonE TITLE="Demandes de service" LINK_TO="/" />
+            <LinkButtonE TITLE="Clients" LINK_TO="/" />
+            <LinkButtonE TITLE="Lieux d'interventions" LINK_TO="/" />
+            <LinkButtonE TITLE="Partenaires" LINK_TO="PARTENAIRES" />
+            <LinkButtonE TITLE="Bénéficaires" LINK_TO="/" />
           </div>
         }
       />
