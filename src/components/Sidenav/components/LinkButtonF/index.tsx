@@ -10,9 +10,11 @@ type linkButtonType = {
 export function LinkButtonF({ LINK_TO, TITLE, LEFT, RIGHT }: linkButtonType) {
   return (
     <Link className="LINK_BUTTON_F" to={LINK_TO}>
-      {LEFT}
-      {TITLE}
-      {RIGHT}
+      <div className="CON_F">
+        {LEFT}
+        {TITLE}
+        {RIGHT}
+      </div>
     </Link>
   );
 }

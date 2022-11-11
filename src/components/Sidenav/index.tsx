@@ -23,7 +23,7 @@ export function Sidenav() {
               }
               TITLE="Ryan Workman"
               LINK_TO="/"
-              RIGHT={null}
+              RIGHT={<i className="fas fa-ellipsis-h"></i>}
             />
             <LinkButtonF
               LEFT={null}
