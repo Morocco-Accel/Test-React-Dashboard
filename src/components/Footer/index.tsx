@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IconC } from "./components";
+import { IconsRow } from "./components";
+import { BlackSpot } from "../Sidenav/components";
 export function Footer() {
   return (
     <div className="FOOTER_CONTAINER">
@@ -9,22 +10,18 @@ export function Footer() {
           <Link to="/">ACCEUIL</Link>
           <Link to="/">A PROPS</Link>
           <Link to="/">NOS SERVICES</Link>
-          <Link to="/">ACTUALIT</Link>
+          <Link to="/">ACTUALITES</Link>
         </div>
         <div className="LINKS_MENU">
           <Link to="/">MENTIONS LEGALES</Link>
           <Link to="/">POLITIQUE DE CONFIDALITE</Link>
           <Link to="/">CONDITION GENERALE D'UTILISATION</Link>
+          <div />
         </div>
 
         <div className="ICON_MENU">
-          <div className="ICONS_ROW">
-            <IconC ICON={<i className="fab fa-facebook-f"></i>} TO={"/"} />
-            <IconC ICON={<i className="fab fa-linkedin-in"></i>} TO={"/"} />
-            <IconC ICON={<i className="fab fa-twitter"></i>} TO={"/"} />
-            <IconC ICON={<i className="fab fa-instagram"></i>} TO={"/"} />
-            <IconC ICON={<i className="fab fa-youtube"></i>} TO={"/"} />
-          </div>
+          <IconsRow />
+          <BlackSpot />
         </div>
       </div>
     </div>
