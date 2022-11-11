@@ -26,10 +26,10 @@ export function Sidenav() {
               RIGHT={<i className="fas fa-ellipsis-h"></i>}
             />
             <LinkButtonF
-              LEFT={null}
+              LEFT={<div />}
               TITLE="Déconnexion"
               LINK_TO="/"
-              RIGHT={null}
+              RIGHT={<div />}
             />
           </div>
         }
@@ -39,7 +39,12 @@ export function Sidenav() {
         CHILDREN={
           <div>
             <LinkButtonE TITLE="Tableau de bord" LINK_TO="/" />
-            <LinkButtonE TITLE="Demandes de service" LINK_TO="/" />
+            <LinkButtonF
+              LEFT={<div />}
+              TITLE="Demandes de service"
+              LINK_TO="/"
+              RIGHT={<div className="SPAN">4</div>}
+            />
             <LinkButtonE TITLE="Clients" LINK_TO="/" />
             <LinkButtonE TITLE="Lieux d'interventions" LINK_TO="/" />
             <LinkButtonE TITLE="Partenaires" LINK_TO="PARTENAIRES" />

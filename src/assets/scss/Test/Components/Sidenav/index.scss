@@ -63,10 +63,22 @@
         justify-content: space-between;
 
         .LINK_IMG {
-          height: 30px;
-          width: 30px;
+          height: 35px;
+          width: 35px;
           border-radius: 50%;
         }
+      }
+      .SPAN {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        height: 15px;
+        width: 15px;
+        color: #103c7e;
+        border-radius: 0.35rem;
+        font-size: small;
+        margin-left: -10px;
       }
     }
   }
