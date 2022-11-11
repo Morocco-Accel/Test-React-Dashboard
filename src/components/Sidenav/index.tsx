@@ -21,7 +21,7 @@ export function Sidenav() {
             <LinkButton TITLE="Demandes de service" LINK_TO="/" />
             <LinkButton TITLE="Clients" LINK_TO="/" />
             <LinkButton TITLE="Lieux d'interventions" LINK_TO="/" />
-            <LinkButton TITLE="Partenaires" LINK_TO="/" />
+            <LinkButton TITLE="Partenaires" LINK_TO="PARTENAIRES" />
             <LinkButton TITLE="Bénéficaires" LINK_TO="/" />
           </div>
         }
