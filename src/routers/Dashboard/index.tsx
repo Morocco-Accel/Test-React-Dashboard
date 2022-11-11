@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { NotFound, Landing } from "pages";
-import { Sidenav, Navbar } from "components";
+import { Sidenav, Navbar, Footer } from "components";
 //
 
 export function DashboardRoute() {
@@ -15,6 +15,7 @@ export function DashboardRoute() {
             <Route index element={<Landing />}></Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Footer />
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 87%;
+  width: 86%;
   height: 100px;
   background-color: #d0eef6;
   .N_CONTAINER {
@@ -28,6 +28,7 @@
 
       width: auto;
       .NOTIFICATION {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -39,6 +40,19 @@
         font-size: 24px;
         cursor: pointer;
         margin-right: 10px;
+        .COUNT {
+          position: absolute;
+          right: 0;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: red;
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          font-size: 16px;
+        }
       }
       .AVATAR {
         background-color: red;
