@@ -6,6 +6,7 @@ import {
   BlackSpot,
   ImgIcon,
 } from "./components";
+
 export function Sidenav() {
   return (
     <div className="SIDE_NAV">
@@ -26,7 +27,7 @@ export function Sidenav() {
               RIGHT={<i className="fas fa-ellipsis-h"></i>}
             />
             <LinkButtonF
-              LEFT={<div />}
+              LEFT={<i className="fas fa-sign-out"></i>}
               TITLE="Déconnexion"
               LINK_TO="/"
               RIGHT={<div />}
@@ -45,7 +46,7 @@ export function Sidenav() {
               LINK_TO="/"
               RIGHT={<div className="SPAN">4</div>}
             />
-            <LinkButtonE TITLE="Clients" LINK_TO="/" />
+            <LinkButtonE TITLE="Clients" LINK_TO="CLIENTS" />
             <LinkButtonE TITLE="Lieux d'interventions" LINK_TO="/" />
             <LinkButtonE TITLE="Partenaires" LINK_TO="PARTENAIRES" />
             <LinkButtonE TITLE="Bénéficaires" LINK_TO="/" />

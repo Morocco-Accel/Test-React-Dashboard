@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { NotFound, Landing, Partenaires } from "pages";
+import { NotFound, Landing, Partenaires, ClientsP } from "pages";
 import { Sidenav, Navbar, Footer } from "components";
 //
 
@@ -14,6 +14,7 @@ export function DashboardRoute() {
           <Routes>
             <Route index element={<Landing />} />
             <Route path="PARTENAIRES" element={<Partenaires />} />
+            <Route path="CLIENTS" element={<ClientsP />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
