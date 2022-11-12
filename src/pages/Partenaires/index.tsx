@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import {} from "./components";
+import { AddButton, Pcard, SearchInput, TableP } from "./components";
 export function Partenaires() {
   return (
     <div className="PARTENAIRES_CONTAINER">
@@ -13,9 +13,14 @@ export function Partenaires() {
               Demandes de Partenariat <span>4</span>
             </Tab>
           </TabList>
-          <div></div>
+          <div className="INFO_ROW">
+            <AddButton />
+            <div className="FILTER_POS">
+              <SearchInput />
+            </div>
+          </div>
           <TabPanel>
-            <h2>Any content 1</h2>
+            <TableP />
           </TabPanel>
           <TabPanel>
             <h2>Nothing</h2>
