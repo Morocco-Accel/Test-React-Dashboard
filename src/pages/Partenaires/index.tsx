@@ -14,9 +14,13 @@ export function Partenaires() {
       <div className="SE_CONTAINER">
         <Tabs>
           <TabList className="">
-            <Tab>Liste des Partenaires</Tab>
             <Tab>
-              Demandes de Partenariat <span>4</span>
+              <h2>Liste des Partenaires</h2>
+            </Tab>
+            <Tab>
+              <h2>
+                Demandes de Partenariat<span>4</span>
+              </h2>
             </Tab>
           </TabList>
           <div className="INFO_ROW">
@@ -26,12 +30,17 @@ export function Partenaires() {
               <FilterButton />
             </div>
           </div>
+
           <TabPanel>
             <TableP />
+            <Pcard
+              AVATAR_URL="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1001.jpg"
+              EMAIL=""
+              FULL_NAME=""
+              TELEPHONE=""
+            />
           </TabPanel>
-          <TabPanel>
-            <h2>Nothing</h2>
-          </TabPanel>
+          <TabPanel></TabPanel>
         </Tabs>
       </div>
     </div>

@@ -2,11 +2,31 @@
   display: flex;
   justify-content: center;
   min-height: 86vh;
+  background-color: #f6fbfe;
   .SE_CONTAINER {
     width: 90%;
     .react-tabs {
+      margin-top: 8vh;
       ul {
         padding-inline-start: 0 !important;
+        li {
+          padding-left: 0;
+          background-color: transparent;
+          border: 1px solid transparent;
+          h2 {
+            margin: 0;
+            span {
+              background-color: red;
+              color: #fff;
+              height: 20px;
+              width: 40px;
+              border-radius: 50%;
+            }
+          }
+          &:focus {
+            border: 1px solid transparent;
+          }
+        }
       }
       .INFO_ROW {
         display: flex;
@@ -79,6 +99,36 @@
               border-radius: 50%;
             }
           }
+        }
+      }
+      table {
+        margin-top: 5vh;
+        width: 100%;
+        color: #aadeed;
+      }
+      .CARD_P {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 100%;
+        height: 90px;
+        border-radius: 0.5rem;
+        border: 2px solid #ecedf1;
+        background-color: #fff;
+        .CONTAINER_P {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 90%;
+        }
+        &:hover {
+          border-radius: 0;
+          border: 2px solid #cb7b57;
+        }
+        .AVATAR {
+          height: 45px;
+          border-radius: 50%;
         }
       }
     }
