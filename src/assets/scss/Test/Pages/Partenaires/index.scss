@@ -1,0 +1,13 @@
+.PARTENAIRES_CONTAINER {
+  display: flex;
+  justify-content: center;
+  min-height: 86vh;
+  .SE_CONTAINER {
+    width: 90%;
+    .react-tabs {
+      ul {
+        padding-inline-start: 0 !important;
+      }
+    }
+  }
+}
