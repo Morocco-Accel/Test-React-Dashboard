@@ -20,13 +20,13 @@ export function Pcard({
     <div className="CARD_P">
       <div className="CONTAINER_P">
         <img className="AVATAR" src={AVATAR_URL} alt="p_avatar" />
-        <div className="ZONE_CON"> {ZONES} </div>
         <p>{FULL_NAME}</p>
+        <div className="ZONE_CON"> {ZONES} </div>
         <p> {TELEPHONE} </p>
         <p> {EMAIL} </p>
         <div className="DISPO_P">
           <div>
-            <span className={DISPO === "Disponible" ? "DISPO" : ""} />
+            <span className={DISPO !== null ? "DISPO" : ""} />
             {DISPO}
           </div>
           <button className="DATE_B">
