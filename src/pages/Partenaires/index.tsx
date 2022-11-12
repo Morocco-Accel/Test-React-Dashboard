@@ -3,17 +3,13 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import {
   AddButton,
-  Pcard,
   SearchInput,
   TableP,
   FilterButton,
+  UsersList,
 } from "./components";
-import { useUsers } from "api";
+
 export function Partenaires() {
-  const { data, isLoading } = useUsers();
-  if (isLoading) {
-    <h1>isLoading....</h1>;
-  }
   return (
     <div className="PARTENAIRES_CONTAINER">
       <div className="SE_CONTAINER">
@@ -38,28 +34,11 @@ export function Partenaires() {
 
           <TabPanel>
             <TableP />
-            {data?.map((item) => {
-              return (
-                <Pcard
-                  AVATAR_URL={item.avatar}
-                  EMAIL={item.email}
-                  FULL_NAME={item.name}
-                  TELEPHONE={item.telephone}
-                  ZONES={null}
-                  DISPO={item.disponible}
-                />
-              );
-            })}
-            <Pcard
-              AVATAR_URL="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1001.jpg"
-              EMAIL="erin@outlook.com"
-              FULL_NAME="Justin Herwitz"
-              TELEPHONE="+33 77 89 67 89"
-              ZONES={null}
-              DISPO="Disponible"
-            />
+            <UsersList />
           </TabPanel>
-          <TabPanel></TabPanel>
+          <TabPanel>
+            <h1>Nothing</h1>
+          </TabPanel>
         </Tabs>
       </div>
     </div>

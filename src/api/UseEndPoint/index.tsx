@@ -1,14 +1,16 @@
 import { useQuery } from "react-query";
 
 import { client } from "../client";
-
+type zoneType = {
+  code: string;
+};
 type TaskType = {
   id: number;
   avatar: string;
   telephone: string;
   disponible: string;
   name: string;
-  lieux: object;
+  lieux: zoneType[];
   email: string;
   createdAt: string;
 };

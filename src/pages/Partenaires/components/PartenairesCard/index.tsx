@@ -19,8 +19,11 @@ export function Pcard({
   return (
     <div className="CARD_P">
       <div className="CONTAINER_P">
-        <img className="AVATAR" src={AVATAR_URL} alt="p_avatar" />
-        <p>{FULL_NAME}</p>
+        <div className="ZONE_USER">
+          <img className="AVATAR" src={AVATAR_URL} alt="p_avatar" />
+          <p>{FULL_NAME}</p>
+        </div>
+
         <div className="ZONE_CON"> {ZONES} </div>
         <p> {TELEPHONE} </p>
         <p> {EMAIL} </p>

@@ -7,6 +7,7 @@
     width: 90%;
     .react-tabs {
       margin-top: 8vh;
+      border: 0;
       ul {
         padding-inline-start: 0 !important;
         li {
@@ -109,71 +110,104 @@
         margin-top: 5vh;
         width: 100%;
         color: #aadeed;
-      }
-      .CARD_P {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        width: 100%;
-        height: 90px;
-        border-radius: 0.5rem;
-        border: 2px solid #ecedf1;
-        background-color: #fff;
-        margin-bottom: 10px;
-        .CONTAINER_P {
+        thead {
           display: flex;
           align-items: center;
-          justify-content: space-between;
-          width: 95%;
-        }
-        &:hover {
-          border-radius: 0;
-          border: 2px solid #cb7b57;
-        }
-        .AVATAR {
-          height: 40px;
-          border-radius: 50%;
-        }
-        .ZONE_CON {
-          width: 200px;
-        }
-        .DISPO_P {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          width: 150px;
+          justify-content: center;
           div {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            width: 90%;
+          }
+        }
+      }
+      .USERS_LIST {
+        min-height: 86vh;
+        margin-bottom: 10vh;
+        .CARD_P {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          width: 100%;
+          height: 90px;
+          border-radius: 0.5rem;
+          border: 2px solid #ecedf1;
+          background-color: #fff;
+          margin-bottom: 10px;
+          .CONTAINER_P {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 95%;
+          }
+          &:hover {
+            border-radius: 0;
+            border: 2px solid #cb7b57;
+          }
+          .ZONE_USER {
+            display: flex;
+            align-items: center;
 
-            span {
-              height: 10px;
-              width: 10px;
+            text-decoration: underline;
+            .AVATAR {
+              margin-right: 20px;
+              height: 40px;
               border-radius: 50%;
-              background-color: red;
-              margin-right: 10px;
-              &.DISPO {
+            }
+          }
+
+          .ZONE_CON {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 250px;
+            span {
+              background-color: #e3f6f8;
+              padding: 3px;
+            }
+          }
+          p {
+            width: 6em;
+          }
+          .DISPO_P {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 150px;
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+
+              span {
                 height: 10px;
                 width: 10px;
                 border-radius: 50%;
-                background-color: rgb(55, 196, 55);
+                background-color: red;
+                margin-right: 10px;
+                &.DISPO {
+                  height: 10px;
+                  width: 10px;
+                  border-radius: 50%;
+                  background-color: rgb(55, 196, 55);
+                }
               }
             }
-          }
-          .DATE_B {
-            cursor: pointer;
-            height: 40px;
-            width: 40px;
-            background-color: #bbe2f5;
-            font-size: 18px;
-            border: 1px solid #bbe2f5;
-            color: #1a4568;
-            &:hover {
-              background-color: #1a4568;
-              border: 1px solid #1a4568;
-              color: #fff;
+            .DATE_B {
+              cursor: pointer;
+              height: 40px;
+              width: 40px;
+              background-color: #bbe2f5;
+              font-size: 18px;
+              border: 1px solid #bbe2f5;
+              color: #1a4568;
+              &:hover {
+                background-color: #1a4568;
+                border: 1px solid #1a4568;
+                color: #fff;
+              }
             }
           }
         }

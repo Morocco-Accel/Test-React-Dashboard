@@ -1,5 +1,6 @@
 export * from "./PartenairesCard";
-export * from "./TableP";
+export * from "./TableHeaderP";
 export * from "./SearchInput";
 export * from "./AddButton";
 export * from "./FilterButton";
+export * from "./UsersList";
