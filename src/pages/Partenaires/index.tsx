@@ -35,10 +35,11 @@ export function Partenaires() {
             <TableP />
             <Pcard
               AVATAR_URL="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1001.jpg"
-              EMAIL=""
-              FULL_NAME=""
-              TELEPHONE=""
+              EMAIL="erin@outlook.com"
+              FULL_NAME="Justin Herwitz"
+              TELEPHONE="+33 77 89 67 89"
               ZONES={null}
+              DISPO="Disponible"
             />
           </TabPanel>
           <TabPanel></TabPanel>

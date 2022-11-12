@@ -6,6 +6,7 @@ type pCardType = {
   TELEPHONE: string;
   EMAIL: string;
   ZONES: any;
+  DISPO: string;
 };
 export function Pcard({
   AVATAR_URL,
@@ -13,6 +14,7 @@ export function Pcard({
   FULL_NAME,
   TELEPHONE,
   ZONES,
+  DISPO,
 }: pCardType) {
   return (
     <div className="CARD_P">
@@ -22,10 +24,15 @@ export function Pcard({
         <p>{FULL_NAME}</p>
         <p> {TELEPHONE} </p>
         <p> {EMAIL} </p>
-        <div></div>
-        <button className="DATE_B">
-          <i className="far fa-calendar"></i>
-        </button>
+        <div className="DISPO_P">
+          <div>
+            <span className={DISPO === "Disponible" ? "DISPO" : ""} />
+            {DISPO}
+          </div>
+          <button className="DATE_B">
+            <i className="far fa-calendar"></i>
+          </button>
+        </div>
       </div>
     </div>
   );

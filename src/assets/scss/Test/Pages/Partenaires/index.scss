@@ -124,7 +124,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          width: 90%;
+          width: 95%;
         }
         &:hover {
           border-radius: 0;
@@ -136,18 +136,43 @@
         }
         .ZONE_CON {
         }
-        .DATE_B {
-          cursor: pointer;
-          height: 40px;
-          width: 40px;
-          background-color: #bbe2f5;
-          font-size: 18px;
-          border: 1px solid #bbe2f5;
-          color: #1a4568;
-          &:hover {
-            background-color: #1a4568;
-            border: 1px solid #1a4568;
-            color: #fff;
+        .DISPO_P {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 150px;
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+              height: 10px;
+              width: 10px;
+              border-radius: 50%;
+              background-color: red;
+              margin-right: 10px;
+              &.DISPO {
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: rgb(55, 196, 55);
+              }
+            }
+          }
+          .DATE_B {
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            background-color: #bbe2f5;
+            font-size: 18px;
+            border: 1px solid #bbe2f5;
+            color: #1a4568;
+            &:hover {
+              background-color: #1a4568;
+              border: 1px solid #1a4568;
+              color: #fff;
+            }
           }
         }
       }
