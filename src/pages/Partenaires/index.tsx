@@ -1,7 +1,13 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { AddButton, Pcard, SearchInput, TableP } from "./components";
+import {
+  AddButton,
+  Pcard,
+  SearchInput,
+  TableP,
+  FilterButton,
+} from "./components";
 export function Partenaires() {
   return (
     <div className="PARTENAIRES_CONTAINER">
@@ -17,6 +23,7 @@ export function Partenaires() {
             <AddButton />
             <div className="FILTER_POS">
               <SearchInput />
+              <FilterButton />
             </div>
           </div>
           <TabPanel>

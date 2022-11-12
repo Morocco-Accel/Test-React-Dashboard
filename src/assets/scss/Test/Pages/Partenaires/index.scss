@@ -12,6 +12,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .ADD_BUTTON {
           cursor: pointer;
           height: 30px;
@@ -29,6 +30,10 @@
           }
         }
         .FILTER_POS {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 250px;
           .INPUT_CON {
             position: relative;
             color: #d0eef6;
@@ -45,6 +50,33 @@
               position: absolute;
               right: -23px;
               top: 10px;
+            }
+          }
+          .FILTER_B {
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ebf6f8;
+            border: 1px solid transparent;
+            height: 37px;
+            color: #aadeed;
+            width: 45px;
+            border-radius: 0.3rem;
+            i {
+              font-size: 18px;
+              margin-right: 10px;
+            }
+            span {
+              position: absolute;
+              right: 0;
+              color: #61a0b1;
+              font-weight: 700;
+              background-color: #fff;
+              height: 15px;
+              width: 15px;
+              border-radius: 50%;
             }
           }
         }

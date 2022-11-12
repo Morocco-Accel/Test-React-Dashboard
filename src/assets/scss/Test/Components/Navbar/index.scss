@@ -1,6 +1,7 @@
 .NAV_BAR {
   position: fixed;
   display: flex;
+  z-index: 1;
   align-items: center;
   justify-content: center;
   width: 86%;
