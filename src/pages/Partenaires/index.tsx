@@ -13,7 +13,7 @@ export function Partenaires() {
     <div className="PARTENAIRES_CONTAINER">
       <div className="SE_CONTAINER">
         <Tabs>
-          <TabList className="">
+          <TabList>
             <Tab>
               <h2>Liste des Partenaires</h2>
             </Tab>
@@ -38,6 +38,7 @@ export function Partenaires() {
               EMAIL=""
               FULL_NAME=""
               TELEPHONE=""
+              ZONES={null}
             />
           </TabPanel>
           <TabPanel></TabPanel>

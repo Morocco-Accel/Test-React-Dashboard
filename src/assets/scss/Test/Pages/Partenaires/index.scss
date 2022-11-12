@@ -131,8 +131,24 @@
           border: 2px solid #cb7b57;
         }
         .AVATAR {
-          height: 45px;
+          height: 40px;
           border-radius: 50%;
+        }
+        .ZONE_CON {
+        }
+        .DATE_B {
+          cursor: pointer;
+          height: 40px;
+          width: 40px;
+          background-color: #bbe2f5;
+          font-size: 18px;
+          border: 1px solid #bbe2f5;
+          color: #1a4568;
+          &:hover {
+            background-color: #1a4568;
+            border: 1px solid #1a4568;
+            color: #fff;
+          }
         }
       }
     }
