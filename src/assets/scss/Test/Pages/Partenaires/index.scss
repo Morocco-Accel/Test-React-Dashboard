@@ -172,17 +172,21 @@
           }
 
           .ZONE_CON {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            display: block;
+
             width: 200px;
+            word-break: break-all;
             span {
+              display: inline-block;
               background-color: #e3f6f8;
-              padding: 3px;
+              padding: 4px;
+              margin-right: 5px;
+
+              margin-bottom: 5px;
             }
           }
           p {
-            width: 6em;
+            width: 7em;
           }
           .DISPO_P {
             display: flex;

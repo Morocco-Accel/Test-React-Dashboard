@@ -1,10 +1,11 @@
 import React from "react";
 import { Pcard } from "../PartenairesCard";
+import { IsLoadingComp } from "components";
 import { useUsers } from "api";
 export function UsersList() {
   const { data, isLoading } = useUsers();
   if (isLoading) {
-    <h1>isLoading....</h1>;
+    <IsLoadingComp />;
   }
   return (
     <div className="USERS_LIST">
