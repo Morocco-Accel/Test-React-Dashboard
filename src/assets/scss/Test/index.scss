@@ -2,6 +2,9 @@
 @import "./Variables";
 @import "./Body";
 
+//@Application Responsive
+@import "./Responsive";
+
 //@Dashboard ui
 @import "./Dashboard";
 
@@ -10,6 +13,3 @@
 
 //@Application Pages
 @import "./Pages";
-
-//@Application Responsive
-@import "./Responsive";
