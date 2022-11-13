@@ -133,6 +133,8 @@
             align-items: center;
             justify-content: space-between;
             width: 85%;
+            th {
+            }
           }
         }
       }
@@ -165,7 +167,7 @@
             display: flex;
             align-items: center;
             text-decoration: underline;
-            width: 180px;
+
             .AVATAR {
               margin-right: 20px;
               height: 40px;
@@ -174,12 +176,15 @@
             .ZONE_UZ {
               display: flex;
               align-items: center;
+              justify-content: space-between;
 
+              p {
+                width: 200px;
+              }
               .ZONE_CON {
                 display: block;
-                width: 200px;
                 word-break: break-all;
-
+                width: 20em;
                 span {
                   display: inline-block;
                   background-color: #e3f6f8;
@@ -192,17 +197,15 @@
           }
         }
         .ZONE_TE {
-          width: 200px;
+          width: 250px;
           display: flex;
           align-items: center;
-          justify-content: space-between;
         }
 
         .DISPO_P {
           display: flex;
           align-items: center;
-          justify-content: space-between;
-          width: 150px;
+
           div {
             display: flex;
             align-items: center;
@@ -230,6 +233,7 @@
             font-size: 18px;
             border: 1px solid #bbe2f5;
             color: #1a4568;
+            margin-left: 2em;
             &:hover {
               background-color: #1a4568;
               border: 1px solid #1a4568;

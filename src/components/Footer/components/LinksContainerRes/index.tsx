@@ -11,6 +11,10 @@ export function LinkContainerRes() {
           <IconsRow />
         </div>
       </div>
+      <div className="LINE_CON">
+        <div className="LINE" />
+      </div>
+
       <div className="CON_RES">
         <div className="LINKS_CONTAINER_R">
           <div className="LINKS_MENU_L">
