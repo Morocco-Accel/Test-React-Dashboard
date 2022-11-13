@@ -309,7 +309,6 @@
       width: 90%;
       .react-tabs {
         margin-top: 1vh;
-
         ul {
           display: flex;
           align-items: center;
@@ -318,6 +317,10 @@
             h2 {
               font-size: 1.3em;
               text-align: center;
+            }
+            span {
+              position: absolute;
+              top: 17px;
             }
           }
         }
@@ -357,29 +360,18 @@
             }
             .FILTER_B {
               cursor: pointer;
-              position: relative;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              background-color: #ebf6f8;
-              border: 1px solid transparent;
-              height: 37px;
-              color: #aadeed;
-              width: 10%;
+              width: 13%;
               border-radius: 0.3rem;
               i {
                 font-size: 18px;
                 margin-right: 10px;
               }
               span {
-                position: absolute;
-                right: 0;
-                color: #61a0b1;
-                font-weight: 700;
-                background-color: #fff;
-                height: 15px;
-                width: 15px;
-                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 20px;
+                width: 20px;
               }
             }
           }
