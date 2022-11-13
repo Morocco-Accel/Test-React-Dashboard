@@ -23,12 +23,15 @@ export function Pcard({
       <div className="CONTAINER_P">
         <div className="ZONE_USER">
           <img className="AVATAR" src={AVATAR_URL} alt="p_avatar" />
-          <p>{FULL_NAME}</p>
+          <div className="ZONE_UZ">
+            <p>{FULL_NAME}</p>
+            <div className="ZONE_CON"> {ZONES} </div>
+          </div>
         </div>
-
-        <div className="ZONE_CON"> {ZONES} </div>
-        <p> {TELEPHONE} </p>
-        <p> {EMAIL} </p>
+        <div className="ZONE_TE">
+          <p> {TELEPHONE} </p>
+          <p> {EMAIL} </p>
+        </div>
         <div className="DISPO_P">
           <div>
             <span className={DISPO !== null ? "DISPO" : ""} />
