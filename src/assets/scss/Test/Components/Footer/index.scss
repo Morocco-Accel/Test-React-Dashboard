@@ -6,6 +6,9 @@
   height: 40vh;
   background-color: #202427;
   color: #fff;
+  .MENU_TOP {
+    display: none;
+  }
   .LINKS_CONTAINER {
     display: flex;
     align-items: center;
@@ -57,6 +60,62 @@
         height: 100%;
         width: 90%;
         border-radius: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .FOOTER_CONTAINER {
+    display: block;
+    height: auto;
+    .MENU_TOP {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 40px;
+      div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 30%;
+        .ICONS_ROW {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: row;
+          a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+              color: cornflowerblue;
+            }
+          }
+        }
+        .BLACK_SPOT {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          background: #000;
+          height: 200px;
+          width: 100%;
+          border-radius: 1.5rem;
+        }
+      }
+    }
+    .LINKS_CONTAINER {
+      height: 100%;
+      .LINKS_MENU {
+        width: 40%;
+        a {
+          margin-bottom: 25px;
+        }
+      }
+      .ICON_MENU {
+        display: none;
       }
     }
   }

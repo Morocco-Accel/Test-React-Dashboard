@@ -5,6 +5,12 @@ import { BlackSpot } from "../Sidenav/components";
 export function Footer() {
   return (
     <div className="FOOTER_CONTAINER">
+      <div className="MENU_TOP">
+        <div>
+          <BlackSpot />
+          <IconsRow />
+        </div>
+      </div>
       <div className="LINKS_CONTAINER">
         <div className="LINKS_MENU">
           <Link to="/">ACCEUIL</Link>
@@ -16,7 +22,7 @@ export function Footer() {
           <Link to="/">MENTIONS LEGALES</Link>
           <Link to="/">POLITIQUE DE CONFIDALITE</Link>
           <Link to="/">CONDITION GENERALE D'UTILISATION</Link>
-          <div />
+          <Link to="/"></Link>
         </div>
 
         <div className="ICON_MENU">
