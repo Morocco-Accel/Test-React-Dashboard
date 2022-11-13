@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { NotFound, Landing, Partenaires, ClientsP } from "pages";
-import { Sidenav, Navbar, Footer } from "components";
+import { Sidenav, Navbar, Footer, SecondNavbar } from "components";
 //
 
 export function DashboardRoute() {
@@ -9,6 +9,7 @@ export function DashboardRoute() {
     <div className="DASHBOARD_CONTAINER">
       <Sidenav />
       <div className="SCREEN_CONTAINER">
+        <SecondNavbar />
         <Navbar />
         <div className="SCREENS">
           <Routes>

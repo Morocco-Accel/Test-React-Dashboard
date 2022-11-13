@@ -1,0 +1,49 @@
+.SECONDE_NAV {
+  display: none;
+}
+
+@media screen and (max-width: 998px) {
+  .SECONDE_NAV {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #103c7e;
+    height: 80px;
+
+    .SNAV_CON {
+      width: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .SN_BLACKSPOT {
+        width: 80px;
+        height: 70px;
+        background-color: #000;
+        border-radius: 1.6rem;
+      }
+      button {
+        margin-left: 40px;
+        height: 40px;
+        width: 50px;
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+        font-size: 30px;
+        &:hover {
+          background-color: rgb(156, 197, 233);
+          border-radius: 0.3rem;
+        }
+      }
+      .USER_INFO {
+        color: #fff;
+        font-size: 30px;
+        i {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

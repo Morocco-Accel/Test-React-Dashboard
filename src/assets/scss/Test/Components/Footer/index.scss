@@ -6,7 +6,7 @@
   height: 40vh;
   background-color: #202427;
   color: #fff;
-  .MENU_TOP {
+  div {
     display: none;
   }
   .LINKS_CONTAINER {
@@ -15,7 +15,22 @@
     justify-content: center;
     width: 90%;
     height: 60%;
-    .LINKS_MENU {
+    .LINKS_MENU_L {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+          color: cornflowerblue;
+        }
+      }
+    }
+    .LINKS_MENU_R {
       width: 30%;
       height: 100%;
       display: flex;
@@ -69,54 +84,92 @@
   .FOOTER_CONTAINER {
     display: block;
     height: auto;
-    .MENU_TOP {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      margin-bottom: 40px;
-      div {
+    div {
+      display: block;
+      .MENU_TOP {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        flex-direction: column;
-        width: 30%;
-        .ICONS_ROW {
-          width: 100%;
+        width: 100%;
+        div {
           display: flex;
-          align-items: center;
-          justify-content: space-between;
-          flex-direction: row;
-          a {
-            font-size: 20px;
-            text-decoration: none;
-            color: #fff;
-            &:hover {
-              color: cornflowerblue;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          width: 30%;
+          margin-bottom: 30px;
+          .ICONS_ROW {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            a {
+              font-size: 20px;
+              text-decoration: none;
+              color: #fff;
+              &:hover {
+                color: cornflowerblue;
+              }
             }
           }
+          .BLACK_SPOT {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background: #000;
+            height: 200px;
+            width: 100%;
+            border-radius: 1.5rem;
+          }
         }
-        .BLACK_SPOT {
-          margin-top: 20px;
-          margin-bottom: 20px;
-          background: #000;
-          height: 200px;
-          width: 100%;
-          border-radius: 1.5rem;
+      }
+      .CON_RES {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5vh;
+        .LINKS_CONTAINER_R {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 80%;
+          height: 20vh;
+          .LINKS_MENU_L {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            a {
+              text-decoration: none;
+              color: #fff;
+              &:hover {
+                color: cornflowerblue;
+              }
+            }
+          }
+          .LINKS_MENU_R {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+
+            a {
+              text-decoration: none;
+              color: #fff;
+              &:hover {
+                color: cornflowerblue;
+              }
+            }
+          }
         }
       }
     }
     .LINKS_CONTAINER {
-      height: 100%;
-      .LINKS_MENU {
-        width: 40%;
-        a {
-          margin-bottom: 25px;
-        }
-      }
-      .ICON_MENU {
-        display: none;
-      }
+      display: none;
     }
   }
 }
