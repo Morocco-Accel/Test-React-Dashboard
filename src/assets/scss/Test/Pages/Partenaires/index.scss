@@ -131,7 +131,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 90%;
+            width: 85%;
           }
         }
       }
@@ -162,8 +162,8 @@
           .ZONE_USER {
             display: flex;
             align-items: center;
-
             text-decoration: underline;
+            width: 180px;
             .AVATAR {
               margin-right: 20px;
               height: 40px;
@@ -173,7 +173,6 @@
 
           .ZONE_CON {
             display: block;
-
             width: 200px;
             word-break: break-all;
             span {
@@ -181,12 +180,11 @@
               background-color: #e3f6f8;
               padding: 4px;
               margin-right: 5px;
-
               margin-bottom: 5px;
             }
           }
           p {
-            width: 7em;
+            width: 7.5em;
           }
           .DISPO_P {
             display: flex;
