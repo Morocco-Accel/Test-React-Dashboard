@@ -12,6 +12,7 @@ export function UsersList() {
       {data?.map((item) => {
         return (
           <Pcard
+            ID={item.id}
             AVATAR_URL={item.avatar}
             EMAIL={item.email}
             FULL_NAME={item.name}

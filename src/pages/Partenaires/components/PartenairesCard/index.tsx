@@ -7,6 +7,7 @@ type pCardType = {
   EMAIL: string;
   ZONES: any;
   DISPO: string;
+  ID: number;
 };
 export function Pcard({
   AVATAR_URL,
@@ -15,9 +16,10 @@ export function Pcard({
   TELEPHONE,
   ZONES,
   DISPO,
+  ID,
 }: pCardType) {
   return (
-    <div className="CARD_P">
+    <div key={ID} className="CARD_P">
       <div className="CONTAINER_P">
         <div className="ZONE_USER">
           <img className="AVATAR" src={AVATAR_URL} alt="p_avatar" />

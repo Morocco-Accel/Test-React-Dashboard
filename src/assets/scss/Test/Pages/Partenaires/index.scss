@@ -23,6 +23,7 @@
           }
           h2 {
             margin: 0;
+            color: #d3d8db;
             &:hover,
             :focus,
             :active {
@@ -30,11 +31,11 @@
             }
 
             span {
-              background-color: red;
+              background-color: #cd3138;
               color: #fff;
               padding-top: 3px;
-              padding-left: 10px;
-              padding-right: 10px;
+              padding-left: 7px;
+              padding-right: 7px;
               padding-bottom: 3px;
               border-radius: 50%;
               margin-left: 10px;
@@ -243,6 +244,12 @@
             display: none;
           }
         }
+      }
+      table {
+        display: none;
+      }
+      .USERS_LIST {
+        margin-top: 30px;
       }
     }
   }
