@@ -9,7 +9,11 @@ export function SecondNavbar() {
           <i className="fas fa-bars"></i>
         </button>
         <div className="USER_INFO">
-          <i className="fas fa-bell"></i>
+          <div className="NOT_N">
+            <i className="fas fa-bell"></i>
+            <div className="N_NOT">4</div>
+          </div>
+
           <i className="fas fa-user"></i>
         </div>
       </div>

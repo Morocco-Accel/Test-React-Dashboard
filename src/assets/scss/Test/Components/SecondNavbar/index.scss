@@ -37,8 +37,26 @@
         }
       }
       .USER_INFO {
+        display: flex;
+        align-items: center;
         color: #fff;
         font-size: 30px;
+        .NOT_N {
+          position: relative;
+          .N_NOT {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -5px;
+            right: 10px;
+            height: 20px;
+            width: 20px;
+            background-color: red;
+            border-radius: 50%;
+            font-size: 16px;
+          }
+        }
         i {
           margin-left: 20px;
           margin-right: 20px;
