@@ -54,12 +54,52 @@
             width: 20px;
             background-color: red;
             border-radius: 50%;
-            font-size: 16px;
+            font-size: 14px;
           }
         }
         i {
           margin-left: 20px;
           margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .SECONDE_NAV {
+    height: 60px;
+    .SNAV_CON {
+      width: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .SN_BLACKSPOT {
+        width: 60px;
+        height: 55px;
+      }
+      button {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      .USER_INFO {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        .NOT_N {
+          position: relative;
+          .N_NOT {
+            top: -3px;
+            right: 7px;
+            height: 10px;
+            width: 10px;
+          }
+        }
+        i {
+          margin-left: 10px;
+          margin-right: 10px;
         }
       }
     }
