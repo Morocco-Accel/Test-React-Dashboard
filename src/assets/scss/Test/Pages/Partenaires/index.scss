@@ -230,3 +230,20 @@
     }
   }
 }
+
+@media screen and (max-width: 998px) {
+  .PARTENAIRES_CONTAINER {
+    .SE_CONTAINER {
+      .react-tabs {
+        margin-top: 4vh;
+        .INFO_ROW {
+          .ADD_BUTTON {
+          }
+          .FILTER_POS {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

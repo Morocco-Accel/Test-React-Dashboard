@@ -3,8 +3,8 @@ import { Pcard } from "../PartenairesCard";
 import { IsLoadingComp } from "components";
 import { useUsers } from "api";
 export function UsersList() {
-  const { data, isLoading } = useUsers();
-  if (isLoading) {
+  const { data, isLoading, isError } = useUsers();
+  if (isLoading || isError) {
     <IsLoadingComp />;
   }
   return (

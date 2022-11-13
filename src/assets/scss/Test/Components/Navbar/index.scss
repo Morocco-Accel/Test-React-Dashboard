@@ -65,3 +65,23 @@
     }
   }
 }
+@media screen and (max-width: 1300px) {
+  .NAV_BAR {
+    .N_CONTAINER {
+      .AVA_NOT {
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .NAV_BAR {
+    position: relative;
+    .N_CONTAINER {
+      .AVA_NOT {
+        display: none;
+      }
+    }
+  }
+}
