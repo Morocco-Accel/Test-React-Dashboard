@@ -475,7 +475,10 @@
               width: 95%;
               .CARD_LEFT {
                 width: 40%;
+                margin-right: 10px;
                 .ZONE_USER {
+                  display: flex;
+                  align-items: flex-start;
                   width: 100px;
                   .AVATAR {
                     margin-right: 5px;
@@ -487,13 +490,14 @@
                     flex-direction: column;
                     width: 10em;
                     p {
+                      margin-top: 5px;
                       margin-bottom: 6px;
                     }
                     .ZONE_CON {
                       display: block;
-
                       word-break: break-all;
-
+                      margin-left: -27%;
+                      margin-top: 30px;
                       span {
                         padding: 2px;
                       }
@@ -509,6 +513,7 @@
                   flex-direction: column;
                   align-items: flex-end;
                   width: 100%;
+                  margin-top: 30px;
                   p {
                     margin-top: 5px;
                     margin-bottom: 5px;
