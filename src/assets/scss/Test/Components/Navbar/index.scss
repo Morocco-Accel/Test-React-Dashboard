@@ -4,7 +4,7 @@
   z-index: 1;
   align-items: center;
   justify-content: center;
-  width: inherit;
+  width: -webkit-fill-available;
   height: 100px;
   background-color: #d0eef6;
   .N_CONTAINER {
