@@ -86,3 +86,17 @@
     }
   }
 }
+@media screen and (max-width: 550px) {
+  .NAV_BAR {
+    .N_CONTAINER {
+      .USER_INFO {
+        h1 {
+          font-size: 26px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

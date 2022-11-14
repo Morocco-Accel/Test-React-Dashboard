@@ -155,93 +155,100 @@
           .CONTAINER_P {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+
             width: 95%;
           }
           &:hover {
             border-radius: 0;
             border: 2px solid #cb7b57;
           }
-
-          .ZONE_USER {
-            display: flex;
-            align-items: center;
-            text-decoration: underline;
-
-            .AVATAR {
-              margin-right: 20px;
-              height: 40px;
-              border-radius: 50%;
-            }
-            .ZONE_UZ {
+          .CARD_LEFT {
+            .ZONE_USER {
               display: flex;
               align-items: center;
-              justify-content: space-between;
+              text-decoration: underline;
 
-              p {
+              .AVATAR {
                 margin-right: 20px;
-                width: 9em;
+                height: 40px;
+                border-radius: 50%;
               }
-              .ZONE_CON {
-                display: block;
-                word-break: break-all;
-                width: 11em;
+              .ZONE_UZ {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
-                span {
-                  display: inline-block;
-                  background-color: #e3f6f8;
-                  padding: 4px;
-                  margin-right: 5px;
-                  margin-bottom: 5px;
+                p {
+                  margin-right: 20px;
+                  width: 10em;
+                }
+                .ZONE_CON {
+                  display: block;
+                  word-break: break-all;
+                  width: 12em;
+
+                  span {
+                    display: inline-block;
+                    background-color: #e3f6f8;
+                    padding: 4px;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                  }
                 }
               }
             }
           }
         }
-        .ZONE_TE {
-          width: 30%;
+        .CARD_RIGHT {
           display: flex;
+          width: 70%;
           align-items: center;
-          justify-content: space-around;
-        }
-
-        .DISPO_P {
-          display: flex;
-          align-items: center;
-
-          div {
+          justify-content: space-between;
+          .ZONE_TE {
+            width: 70%;
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-around;
+          }
 
-            span {
-              height: 10px;
-              width: 10px;
-              border-radius: 50%;
-              background-color: red;
-              margin-right: 10px;
-              &.DISPO {
+          .DISPO_P {
+            display: flex;
+            align-items: center;
+
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+
+              span {
                 height: 10px;
                 width: 10px;
                 border-radius: 50%;
-                background-color: rgb(55, 196, 55);
+                background-color: red;
+                margin-right: 10px;
+                &.DISPO {
+                  height: 10px;
+                  width: 10px;
+                  border-radius: 50%;
+                  background-color: rgb(55, 196, 55);
+                }
               }
             }
-          }
-          .DATE_B {
-            cursor: pointer;
-            height: 40px;
-            width: 40px;
-            background-color: #bbe2f5;
-            font-size: 18px;
-            border: 1px solid #bbe2f5;
-            color: #1a4568;
-            margin-left: 2em;
-            border-radius: 0.3rem;
-            &:hover {
-              background-color: #1a4568;
-              border: 1px solid #1a4568;
-              color: #fff;
+            .DATE_B {
+              cursor: pointer;
+              height: 40px;
+              width: 40px;
+              background-color: #bbe2f5;
+              font-size: 18px;
+              border: 1px solid #bbe2f5;
+              color: #1a4568;
+              margin-left: 2em;
+              border-radius: 0.3rem;
+              &:hover {
+                background-color: #1a4568;
+                border: 1px solid #1a4568;
+                color: #fff;
+              }
             }
           }
         }
@@ -268,18 +275,26 @@
         margin-top: 30px;
         .CARD_P {
           .CONTAINER_P {
-            .ZONE_USER {
-              .ZONE_UZ {
-                p {
-                  width: 4em;
+            .CARD_LEFT {
+              .ZONE_USER {
+                .ZONE_UZ {
+                  p {
+                    width: 4em;
+                  }
+                  .ZONE_CON {
+                    display: block;
+                    width: 200px;
+                    word-break: break-all;
+                    span {
+                      padding: 2px;
+                    }
+                  }
                 }
-                .ZONE_CON {
-                  display: block;
-                  width: 200px;
-                  word-break: break-all;
-
-                  span {
-                    padding: 2px;
+                .CARD_RIGHT {
+                  .DISPO_P {
+                    .DATE_B {
+                      margin-left: 1.5em;
+                    }
                   }
                 }
               }
@@ -298,6 +313,10 @@
         margin-top: 4vh;
         .INFO_ROW {
           .ADD_BUTTON {
+            height: 35px;
+            padding-left: 1em;
+            padding-right: 1em;
+            border-radius: 0.6rem;
           }
           .FILTER_POS {
             display: none;
@@ -310,33 +329,38 @@
       .USERS_LIST {
         margin-top: 30px;
         .CARD_P {
+          height: 100px;
           .CONTAINER_P {
-            .ZONE_USER {
-              width: 250px;
-              .ZONE_UZ {
-                height: 100%;
-                display: flex;
-                align-items: flex-start;
-                flex-direction: column;
-                width: 10em;
-                p {
-                  width: 8em;
-                  margin-bottom: 6px;
-                }
-                .ZONE_CON {
-                  display: block;
-                  width: 200px;
-                  word-break: break-all;
+            .CARD_LEFT {
+              .ZONE_USER {
+                width: 250px;
+                .ZONE_UZ {
+                  height: 100%;
+                  display: flex;
+                  align-items: flex-start;
+                  flex-direction: column;
+                  width: 10em;
+                  p {
+                    width: 8em;
+                    margin-bottom: 6px;
+                  }
+                  .ZONE_CON {
+                    display: block;
+                    width: 200px;
+                    word-break: break-all;
 
-                  span {
-                    padding: 2px;
+                    span {
+                      padding: 2px;
+                    }
                   }
                 }
               }
             }
-
-            .ZONE_TE {
-              display: inline;
+            .CARD_RIGHT {
+              width: 60%;
+              .ZONE_TE {
+                display: inline;
+              }
             }
           }
         }
@@ -349,6 +373,7 @@
   .PARTENAIRES_CONTAINER {
     .SE_CONTAINER {
       .react-tabs {
+        margin-top: 2vh;
         ul {
           li {
             h2 {
@@ -361,8 +386,7 @@
     }
   }
 }
-//Responsive_MOBILE_GRAND
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .PARTENAIRES_CONTAINER {
     display: flex;
     justify-content: center;
@@ -378,12 +402,12 @@
           li {
             width: 50%;
             h2 {
-              font-size: 1.3em;
+              font-size: 1.2em;
               text-align: center;
             }
             span {
               position: absolute;
-              top: 17px;
+              top: 0px;
             }
           }
         }
@@ -392,10 +416,14 @@
 
           .ADD_BUTTON {
             display: block;
+            position: relative;
             width: 100%;
             height: 40px;
             margin-bottom: 10px;
+            margin-top: 10px;
             i {
+              position: absolute;
+              left: 10px;
               margin-right: 5px;
             }
             &:hover {
@@ -439,7 +467,61 @@
             }
           }
         }
+        .USERS_LIST {
+          margin-top: 30px;
+          .CARD_P {
+            height: 120px;
+            .CONTAINER_P {
+              width: 95%;
+              .CARD_RIGHT {
+                .ZONE_USER {
+                  .ZONE_UZ {
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    width: 10em;
+                    p {
+                      width: 8em;
+                      margin-bottom: 6px;
+                    }
+                    .ZONE_CON {
+                      display: block;
+
+                      word-break: break-all;
+
+                      span {
+                        padding: 2px;
+                      }
+                    }
+                  }
+                }
+              }
+              .CARD_RIGHT {
+                flex-direction: column-reverse;
+                font-size: 14px;
+                .ZONE_TE {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  width: 100%;
+                  p {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                  }
+                }
+                .DISPO_P {
+                  width: 100%;
+                  justify-content: end;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
+}
+//Responsive_MOBILE_GRAND
+@media screen and (max-width: 550px) {
 }
