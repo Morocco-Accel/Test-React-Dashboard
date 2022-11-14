@@ -344,7 +344,24 @@
     }
   }
 }
-
+//@ Responsive_TAB_MINI
+@media screen and (max-width: 767px) {
+  .PARTENAIRES_CONTAINER {
+    .SE_CONTAINER {
+      .react-tabs {
+        ul {
+          li {
+            h2 {
+              font-size: 1.3em;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Responsive_MOBILE_GRAND
 @media screen and (max-width: 550px) {
   .PARTENAIRES_CONTAINER {
     display: flex;
