@@ -473,8 +473,13 @@
             height: 120px;
             .CONTAINER_P {
               width: 95%;
-              .CARD_RIGHT {
+              .CARD_LEFT {
+                width: 40%;
                 .ZONE_USER {
+                  width: 100px;
+                  .AVATAR {
+                    margin-right: 5px;
+                  }
                   .ZONE_UZ {
                     height: 100%;
                     display: flex;
@@ -482,7 +487,6 @@
                     flex-direction: column;
                     width: 10em;
                     p {
-                      width: 8em;
                       margin-bottom: 6px;
                     }
                     .ZONE_CON {
@@ -513,6 +517,11 @@
                 .DISPO_P {
                   width: 100%;
                   justify-content: end;
+                  .DATE_B {
+                    margin-left: 10px;
+                    height: 30px;
+                    width: 30px;
+                  }
                 }
               }
             }
