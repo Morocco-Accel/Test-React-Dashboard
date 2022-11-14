@@ -179,12 +179,14 @@
               justify-content: space-between;
 
               p {
-                width: 200px;
+                margin-right: 20px;
+                width: 8em;
               }
               .ZONE_CON {
                 display: block;
                 word-break: break-all;
-                width: 20em;
+                width: 11em;
+
                 span {
                   display: inline-block;
                   background-color: #e3f6f8;
@@ -197,9 +199,10 @@
           }
         }
         .ZONE_TE {
-          width: 250px;
+          width: 30%;
           display: flex;
           align-items: center;
+          justify-content: space-around;
         }
 
         .DISPO_P {
@@ -234,10 +237,52 @@
             border: 1px solid #bbe2f5;
             color: #1a4568;
             margin-left: 2em;
+            border-radius: 0.3rem;
             &:hover {
               background-color: #1a4568;
               border: 1px solid #1a4568;
               color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .PARTENAIRES_CONTAINER {
+    .SE_CONTAINER {
+      .react-tabs {
+        margin-top: 4vh;
+        .INFO_ROW {
+          .ADD_BUTTON {
+          }
+          .FILTER_POS {
+            display: none;
+          }
+        }
+      }
+
+      .USERS_LIST {
+        margin-top: 30px;
+        .CARD_P {
+          .CONTAINER_P {
+            .ZONE_USER {
+              .ZONE_UZ {
+                p {
+                  width: 4em;
+                }
+                .ZONE_CON {
+                  display: block;
+                  width: 200px;
+                  word-break: break-all;
+
+                  span {
+                    padding: 2px;
+                  }
+                }
+              }
             }
           }
         }
